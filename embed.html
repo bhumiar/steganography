@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steganography - Embed</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+<body>
+    <div id="steganography-container">
+        <h1>Steganography App</h1>
+        <h2>Multi-Image Steganography - Embed</h2>
+        <div id="input-container">
+            <input type="file" id="image1" accept="image/*"><br>
+            <input type="file" id="image2" accept="image/*"><br>
+            <input type="file" id="image3" accept="image/*"><br>
+            <textarea id="data" placeholder="Enter data to hide"></textarea><br>
+            <input type="password" id="embedPassword" placeholder="Embed Password"> <br>
+            <button id="embed">Embed Data</button>
+        </div>
+
+        <div id="output-container">
+            <div id="output-images"></div>
+            <button id="downloadZip" style="display: none;">Download Zip</button>
+            <div id="error-message" class="error"></div>
+        </div>
+        <a href="extract.html">Go to Extraction page</a>
+    </div>
+    <script src="embed.js"></script>
+    <!-- <script> src="extract.js"</script> -->
+</body>
+</html>

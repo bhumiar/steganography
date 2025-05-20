@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steganography - Extract</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+</head>
+<body>
+    <div id="extraction-container">
+        <h1>Steganography App</h1>
+        <h2>Steganography - Extract Data from Zip</h2>
+        <div id="extract-input">
+            <input type="file" id="extractZip" accept=".zip"><br>
+            <input type="password" id="extractPassword" placeholder="Extract Password"> <br>
+            <button id="extract" onclick="extractText()" >Extract Data</button>
+        </div>
+        <div id="result"></div>
+        <div id="error-message" class="error"></div>
+        <a href="embed.html">Go to embedding page</a>
+    </div>
+    <script src="extract.js"></script>
+    
+</body>
+</html>

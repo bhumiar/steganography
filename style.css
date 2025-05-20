@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+#auth-container, #steganography-container, #extraction-container, #navigation-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+#auth-container h1, #steganography-container h1, #extraction-container h1, #navigation-container h1 {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#auth-container h2, #steganography-container h2, #extraction-container h2, #navigation-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="password"], textarea, button {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+img {
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    margin-top: 25px;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.error {
+    color: red;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+#navigation-container button {
+    margin: 10px;
+    width: 200px;
+}
+
+#downloadZip {
+    margin-top: 20px;
+}
+
+#input-container input[type="file"] {
+    margin-bottom: 5px;
+}
+
+#input-container textarea {
+    min-height: 100px;
+}
